@@ -8,9 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * JavaFX App
- */
+
 public class App extends Application {
 
     private static Scene scene;
@@ -19,14 +17,10 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
 
 
-        //tomt i Paulines :(((
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("loginscreen"), 640, 580);
         stage.setScene(scene);
         stage.show();
     }
-
-
-
 
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));

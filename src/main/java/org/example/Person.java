@@ -1,5 +1,9 @@
 package org.example;
 
+import javafx.geometry.Point2D;
+import javafx.scene.PointLight;
+import javafx.scene.effect.Light;
+
 public class Person {
     private  String navn;
     private int ID,alder;
@@ -36,5 +40,18 @@ public class Person {
 
     public void setNavn(String navn) {
         this.navn = navn;
+    }
+
+
+
+    public String isRayThere(PointLight location){
+        String ray =location.getId();
+        String outcome;
+        if(ray.equals("there")){
+
+            return ray;
+        } else{
+            return "Square";
+        }
     }
 }
